@@ -8,6 +8,14 @@ body {
 
 main {
     padding: 30px;
+    display: grid;
+    grid-template-columns: 150px auto 150px 35px 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 10px;
+}
+
+section {
+    display: contents;
 }
 
 header {

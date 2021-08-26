@@ -8,18 +8,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>My App</title>
+    <title>Calculator Web App</title>
 </head>
 
 <body>
     <header>
-        <h1>My App</h1>
+        <h1>Calculator</h1>
         <img src="assets/big-logo.png" />
     </header>
-    
     <main>
 
-        Make a Web App!
+        <section id= "calculator">
+            <input type="number" id="num-input-1"> 
+            <!-- <select name="operator" id="operator">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">x</option>
+                <option value="divide">÷</option>
+            </select> -->
+            <p id="temp-operator-add">+</p>
+            <input type="number" id="num-input-2">
+            <button id="equals">=</button>
+            <span id="result">0</span>
+        </section>
         
     </main>
 
