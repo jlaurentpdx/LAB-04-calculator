@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 // import functions
-import * as Calculate from './calculations.js';
+// import * as Calculate from './calculations.js';
 
 // reference needed DOM elements
 const numInput1 = document.getElementById('num-input-1'); 
