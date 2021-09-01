@@ -1,17 +1,27 @@
 
 body {        
     font-family: 'Titillium Web', sans-serif;
-    background-color: #FFFCFA;
+    background-color:linen;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 main {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 150px auto 150px 35px 1fr;
-    grid-auto-rows: min-content;
+    background-color: lightcoral;
+    display: grid; 
+    grid-auto-rows: max-content; 
     grid-gap: 10px;
+
+    font-size: 1.5rem;
+    color: white;
+    max-width: 400px;
+    max-height: 280px;
+    box-shadow: 4px 4px darkslategray;
+
+    padding: 30px;
+    border: 0px solid slategray;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 section {
@@ -19,7 +29,7 @@ section {
 }
 
 header {
-    background-color: #A2D7D2;
+    background-color: lightcoral;
     height: 110px;
     padding: 0 30px;
     display: flex;
@@ -37,7 +47,72 @@ h1 {
     font-weight: bold;
 }
 
+input {
+    margin: auto;
+    border: 0px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    color: darkslategray;
+    padding-right: 3px;
+}
+
+button {
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 3px 3px darkslategray;
+    background-color: slategray;
+    color: white;
+    font-size: 1.5rem;
+}
+
+button:active {
+    transform: translate(1.5px, 1.5px);
+    box-shadow: 1.5px 1.5px darkslategray;
+}
+
 footer {
     background-color: #FAF0EA;
     padding: 10px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: x-small;
+}
+
+sub {
+    vertical-align: bottom;
+    font-size: x-small;
+}
+
+.button-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 48.5% 20px auto;
+    gap: 10px;
+    text-align: center;
+} 
+
+.equals-button {
+    grid-column: 2 / 5;
+    width: 100%;
+}
+
+.print-result {
+    border: 0px;
+    border-radius: 5px;
+    background: linen;
+    color: darkslategray;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0px 10px 0px 0px;
 }
