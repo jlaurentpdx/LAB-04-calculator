@@ -30,10 +30,6 @@ export function intDivide(x, y) {
 
 export function exponent(x, y) {return x ** y;}
 
-export function pythagFindH(x, y) {
-    return (x * x) + (y * y);
-}
+export function pythagFindH(x, y) {return (x * x) + (y * y);}
 
-export function pythagFindC(x, y) {
-    return Number(Math.sqrt(pythagFindH(x, y)).toFixed(2));
-}
+export function pythagFindC(x, y) {return Number(Math.sqrt(pythagFindH(x, y)).toFixed(2));}
