@@ -13,36 +13,37 @@
 
 <body>
     <header>
-        <h1>Baby's Second Calculator</h1>
+        <h1>baby's first calculator app</h1>
         <img src="assets/big-logo.png" />
     </header>
-    <main>
 
-        <span id="print-result" class="print-result">0</span>
+    <main>  
+        <section id="calculator">
+            <span id="print-result" class="print-result">0</span>
 
-        <section id="calculator" class="calculator">
-            <input id="num-input-1" type="number" placeholder="0"> 
-            <span id="operator-active" name="add">+</span>
-            <input id="num-input-2" type="number" placeholder="0">
-            <!-- | margin of error: ±<span id="plus-or-minus">0</span> -->
+            <section id="calculator_io" class="calculator_io">
+                <input id="num-input-1" type="number" placeholder="0"> 
+                <span id="operator-active" name="add">+</span>
+                <input id="num-input-2" type="number" placeholder="0">
+                <!-- | margin of error: ±<span id="plus-or-minus">0</span> -->
+            </section>
+    
+            <section id="button-pad" class="button-pad">
+                <!-- Each button ID is set as a numerical value to quickly grab IDs in a for loop in app.js -->
+                <button name="+" id="0" title="add" class="operator-button">+</button> 
+                <button name="-" id="1" title="subtract" class="operator-button">-</button>
+                <button name="*" id="2" title="multiply" class="operator-button">*</button>
+                <button name="/d" id="3" title="divide (decimal result)" class="operator-button">/<sub>(dec)</sub></button>
+    
+                <button name="**" id="4" title="exponent" class="operator-button">**</button>
+                <button name="c2" id="5" title="Pythagorean Theorem: find c if a2 + b2 = c2" class="operator-button">c<sup>2</sup></button>
+                <button name="H" id="6" title="Pythagorean Theorem: find H of right triangle" class="operator-button">H</button>
+                <button name="/i" id="7" title="divide (integer result)" class="operator-button">/<sub>(int)</sub></button>
+                
+                <button name="%" id="8" title="modulo" class="operator-button">%</button>
+                <button name="=" id="equals-btn" title="equals (display result)" class="equals-button">=</button>
+            </section>
         </section>
-
-        <section id="button-pad" class="button-pad">
-            <button name="+" id="0" title="add" class="operator-button">+</button>
-            <button name="-" id="1" title="subtract" class="operator-button">-</button>
-            <button name="*" id="2" title="multiply" class="operator-button">*</button>
-            <button name="/d" id="3" title="divide (decimal result)" class="operator-button">/<sub>(dec)</sub></button>
-
-            <button name="**" id="4" title="exponent" class="operator-button">**</button>
-            <button name="c2" id="5" title="Pythagorean Theorem: find c if a2 + b2 = c2" class="operator-button">c<sup>2</sup></button>
-            <button name="H" id="6" title="Pythagorean Theorem: find H of right triangle" class="operator-button">H</button>
-            <button name="/i" id="7" title="divide (integer result)" class="operator-button">/<sub>(int)</sub></button>
-            
-            <button name="%" id="8" title="modulo" class="operator-button">%</button>
-            <button name="=" id="equals-btn" title="equals (display result)" class="equals-button">=</button>
-
-        </section>
-        
     </main>
 
     <footer>
