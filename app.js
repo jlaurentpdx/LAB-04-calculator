@@ -29,7 +29,7 @@ equalsBtn.addEventListener('click', () => {
         case '-':
             result = Calculate.subtract(x, y);
             break;
-        case 'x':
+        case '*':
             result = Calculate.multiply(x, y);
             break;
         case '/d':
